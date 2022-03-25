@@ -1,0 +1,50 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Assets\tetris\background.png" />
+    <None Remove="Assets\tetris\Block-Empty.png" />
+    <None Remove="Assets\tetris\Block-I.png" />
+    <None Remove="Assets\tetris\Block-J.png" />
+    <None Remove="Assets\tetris\Block-L.png" />
+    <None Remove="Assets\tetris\Block-O.png" />
+    <None Remove="Assets\tetris\Block-S.png" />
+    <None Remove="Assets\tetris\Block-T.png" />
+    <None Remove="Assets\tetris\Block-Z.png" />
+    <None Remove="Assets\tetris\TileBlue.png" />
+    <None Remove="Assets\tetris\TileCyan.png" />
+    <None Remove="Assets\tetris\TileEmpty.png" />
+    <None Remove="Assets\tetris\TileGreen.png" />
+    <None Remove="Assets\tetris\TileOrange.png" />
+    <None Remove="Assets\tetris\TilePurple.png" />
+    <None Remove="Assets\tetris\TileRed.png" />
+    <None Remove="Assets\tetris\TileYellow.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Assets\tetris\background.png" />
+    <Resource Include="Assets\tetris\Block-Empty.png" />
+    <Resource Include="Assets\tetris\Block-I.png" />
+    <Resource Include="Assets\tetris\Block-J.png" />
+    <Resource Include="Assets\tetris\Block-L.png" />
+    <Resource Include="Assets\tetris\Block-O.png" />
+    <Resource Include="Assets\tetris\Block-S.png" />
+    <Resource Include="Assets\tetris\Block-T.png" />
+    <Resource Include="Assets\tetris\Block-Z.png" />
+    <Resource Include="Assets\tetris\TileBlue.png" />
+    <Resource Include="Assets\tetris\TileCyan.png" />
+    <Resource Include="Assets\tetris\TileEmpty.png" />
+    <Resource Include="Assets\tetris\TileGreen.png" />
+    <Resource Include="Assets\tetris\TileOrange.png" />
+    <Resource Include="Assets\tetris\TilePurple.png" />
+    <Resource Include="Assets\tetris\TileRed.png" />
+    <Resource Include="Assets\tetris\TileYellow.png" />
+  </ItemGroup>
+
+</Project>
