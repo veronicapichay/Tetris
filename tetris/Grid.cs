@@ -33,13 +33,11 @@ namespace tetris
         {
             return r >= 0 && r < Rows && c >= 0 && c < Columns;
         }
-
         public bool IsEmpty(int r, int c) //checks if cell is empty
         {
             return IsInside(r, c) && grid[r, c] == 0;
 
         }
-
         public bool IsrFull(int r) //checks if r is full 
         {
             for (int c = 0; c < Columns; c++)
@@ -49,7 +47,6 @@ namespace tetris
             return true;
 
         }
-
         public bool IsrEmpty(int r) //checks if r is empty
         {
             for (int c = 0; c < Columns; c++)
@@ -75,7 +72,6 @@ namespace tetris
 
             }
         }
-
         public int ClearfRows() //removes buttom to top, increments counter if its clear 
         {
             int clear = 0;

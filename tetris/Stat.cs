@@ -30,7 +30,7 @@ namespace tetris
                 }
             }
         }
-        //properties for the classes
+        //properties 
         public Grid GameGrid { get; }
         public BlockQueue BlockQueue { get; }
         public bool GameOver { get; private set; }

@@ -5,8 +5,8 @@ using System.Text;
 using System.Threading.Tasks;
 
 namespace tetris
-{
-    public abstract class Block
+{   
+    public abstract class Block                           //template 
     {
         protected abstract BlockMove[][] Tiles { get; } //tile position on 4 states
         protected abstract BlockMove StartOffset { get; } //bounding grid location inside the grid

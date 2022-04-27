@@ -10,8 +10,6 @@ using System.Windows.Documents;
 using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
-using System.Windows.Navigation;
-using System.Windows.Shapes;
 
 namespace tetris
 {
@@ -120,22 +118,22 @@ namespace tetris
                 HoldImage.Source = blockImages[heldBlock.Id];
             }
         }
-        //feature to display where char will drop 
-        private void DrawGhostBlock(Block block)
-        {
-            int dropDistance = gameState.BlockDropDistance();
+        ////feature to display where char will drop 
+        //private void DrawGhostBlock(Block block)
+        //{
+        //    int dropDistance = gameState.BlockDropDistance();
 
-            foreach (BlockMove p in block.TileBlockMoves())
-            {
-                imageControls[p.Row + dropDistance, p.Column].Opacity = 0.25; //shadow effect
-                imageControls[p.Row + dropDistance, p.Column].Source = tileImages[block.Id];
-            }
-        }
+        //    foreach (BlockMove p in block.TileBlockMoves())
+        //    {
+        //        imageControls[p.Row + dropDistance, p.Column].Opacity = 0.25; //shadow effect
+        //        imageControls[p.Row + dropDistance, p.Column].Source = tileImages[block.Id];
+        //    }
+        //}
 
         private void Draw(Stat gameState)
         {
             DrawGrid(gameState.GameGrid);
-            DrawGhostBlock(gameState.CurrentBlock);
+            //DrawGhostBlock(gameState.CurrentBlock);
             DrawBlock(gameState.CurrentBlock);
             DrawNextBlock(gameState.BlockQueue);
             DrawHeldBlock(gameState.HeldBlock);
